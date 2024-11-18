@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react'
-import { Button, Input, InputContainer } from './styles'
-import { Minus, Plus, ShoppingCart } from '@phosphor-icons/react'
+import { Input, InputContainer } from './styles'
+import { Minus, Plus } from '@phosphor-icons/react'
 
 export function InputNumber() {
   const [quantity, setQuantity] = useState(1)
@@ -28,24 +28,19 @@ export function InputNumber() {
 
   return (
     <InputContainer>
-      <div>
-        <button type="button" onClick={() => removeQuantity()}>
-          <Minus size={18} />
-        </button>
-        <Input
-          type="number"
-          value={quantity}
-          onChange={(event) => alterQuantity(event)}
-        />
-        <button
-          type="button" onClick={() => addQuantity()}
-        ><Plus size={18} />
-        </button>
-      </div>
 
-      <Button type="button">
-        <ShoppingCart size={18} weight="fill" />
-      </Button>
+      <button type="button" onClick={() => removeQuantity()}>
+        <Minus size={18} />
+      </button>
+      <Input
+        type="number"
+        value={quantity}
+        onChange={(event) => alterQuantity(event)}
+      />
+      <button
+        type="button" onClick={() => addQuantity()}
+      ><Plus size={18} />
+      </button>
     </InputContainer>
   )
 }

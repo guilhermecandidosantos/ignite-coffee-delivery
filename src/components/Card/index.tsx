@@ -1,5 +1,6 @@
+import { ShoppingCart } from '@phosphor-icons/react'
 import { InputNumber } from '../InputNumber'
-import { CardContainer, PriceContainer, TagContainer } from './styles'
+import { Button, CardContainer, PriceContainer, TagContainer } from './styles'
 
 interface CardProps {
   coffee: {
@@ -30,6 +31,10 @@ export function Card({ coffee }: CardProps) {
         </label>
 
         <InputNumber />
+
+        <Button type="button">
+          <ShoppingCart size={18} weight="fill" />
+        </Button>
       </PriceContainer>
     </CardContainer>
   )

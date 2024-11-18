@@ -62,3 +62,18 @@ export const PriceContainer = styled.div`
     margin: 0 1.4375rem 0 0.25rem;
   }
 `
+export const Button = styled.button`
+  padding: 0.5rem;
+  background: ${props => props.theme['purple-dark']};
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${props => props.theme['base-card']};
+  cursor: pointer;
+
+  &:hover{
+    background: ${props => props.theme['purple']};
+  }
+`
