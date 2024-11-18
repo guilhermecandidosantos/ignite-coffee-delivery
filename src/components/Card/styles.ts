@@ -47,13 +47,18 @@ export const TagContainer = styled.div`
 `
 
 export const PriceContainer = styled.div`
-    color: ${props => props.theme['base-text']};
-    
-    > span {
-      ${typeFont.textS};
-    };
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: ${props => props.theme['base-text']};
   
-    label {
-      ${typeFont.titleM};
-    }
+  > span {
+    ${typeFont.textS};
+  };
+
+  label {
+    ${typeFont.titleM};
+    margin: 0 1.4375rem 0 0.25rem;
+  }
 `

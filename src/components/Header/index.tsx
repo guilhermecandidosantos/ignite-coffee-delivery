@@ -14,6 +14,7 @@ export function Header() {
           Monte Mor, SP
         </span>
         <button>
+          <span>1</span>
           <ShoppingCart size={24} weight="fill" />
         </button>
       </div>

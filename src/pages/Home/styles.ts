@@ -5,7 +5,7 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-
+  
   > h1 {
     ${typeFont.titleL};
     color: ${props => props.theme['base-subtitle']};
@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
 
   > img {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     left: 0;
     top: 0;
     filter: blur(80px);
