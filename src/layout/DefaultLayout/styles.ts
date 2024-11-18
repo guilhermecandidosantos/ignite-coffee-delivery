@@ -9,6 +9,7 @@ export const LayoutContainer = styled.div`
 
    @media (max-width: 927px) {
     margin: 1rem 0.25rem; 
+    overflow-x: hidden;
    }
 
 `

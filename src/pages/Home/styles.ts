@@ -125,7 +125,7 @@ export const CardsContainer = styled.main`
     justify-content: center;
   }
 
-  @media (max-width: 927px) {
+  @media (max-width: 600px) {
     grid-template-columns: auto;
     align-items: center;
     justify-content: center;
