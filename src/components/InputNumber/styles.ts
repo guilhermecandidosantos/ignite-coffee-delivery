@@ -22,7 +22,7 @@ export const InputContainer = styled.div`
 `
 
 export const Input = styled.input`
-  max-width: 3rem;
+  max-width: 2rem;
   text-align: center;
   background: transparent;
   border: none;

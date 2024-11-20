@@ -107,27 +107,14 @@ export const ImageCoffee = styled.div`
 `
 
 export const CardsContainer = styled.main`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
   margin-top: 3.375rem;
 
-  @media (max-width: 1442px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 1247px) {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: auto;
-    align-items: center;
+  @media (max-width: 575px) {
     justify-content: center;
   }
 `

@@ -50,6 +50,7 @@ export const PriceContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 2rem;
 
   color: ${props => props.theme['base-text']};
   
