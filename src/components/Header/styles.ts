@@ -7,6 +7,8 @@ export const HeaderContainer = styled.header`
   margin: 0 20rem;
   padding: 2rem 0;
 
+  
+
   > div {
     display: flex;
     justify-content: center;
@@ -26,20 +28,32 @@ export const HeaderContainer = styled.header`
     padding: 0.5rem;
   }
 
-  > div > button {
-    border: none;
-    background: ${props => props.theme['yellow-light']};
-    color: ${props => props.theme['yellow-dark']};
-    border-radius: 8px;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
+  @media (max-width: 1752px) {
+    margin: 0 15rem;
   }
+
+  @media (max-width: 1656px) {
+    margin: 0 10rem;
+  }
+
+  @media (max-width: 1588px) {
+    margin: 0 2rem;
+  }
+`
+export const CardButton = styled.button`
+  border: none;
+  background: ${props => props.theme['yellow-light']};
+  color: ${props => props.theme['yellow-dark']};
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
   
-  > div > button > span {
+  > span {
     position: absolute;
     top: 0;
     right: 0;

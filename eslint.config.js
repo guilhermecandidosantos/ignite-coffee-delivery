@@ -5,8 +5,11 @@ export default [
   {
     rules: {
       'no-unused-vars': 'off',
-      '@typescript-eslint/no-empty-object-type': ['error',
-        { allowInterfaces: 'always' }],
+      '@typescript-eslint/no-empty-object-type': [
+        'error',
+        { allowInterfaces: 'always' },
+      ],
+      '@stylistic/max-len': ['error', { code: 100, ignoreComments: true }],
     },
   },
 ]
