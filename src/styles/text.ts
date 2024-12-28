@@ -87,7 +87,7 @@ export const typeFont = {
 
   buttonG: css`
     font-family: "Roboto", sans-serif;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
     line-height: 1.6;
     font-weight: bold;
   `,
