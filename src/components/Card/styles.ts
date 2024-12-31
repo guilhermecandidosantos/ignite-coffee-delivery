@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { typeFont } from '../../styles/text'
 
 export const CardContainer = styled.div`
@@ -50,6 +50,26 @@ export const TagsContainer = styled.div`
    }
 `
 
+const checkAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const cartAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+`
+
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: row;
@@ -82,10 +102,26 @@ export const FormContainer = styled.form`
     cursor: pointer;
     transition: 0.15s ease-in-out;
 
+    > svg {
+      &[data-state=true] {
+        animation: ${checkAnimation} 0.2s ease-in-out;
+      }
+
+      &[data-state=false] {
+        animation: ${cartAnimation} 0.2s ease-in-out;
+      }
+      
+    }
   }
 
-  > button:hover {
+  > button:not(:disabled):hover {
     background: ${props => props.theme['purple']};
     transition: 0.15s ease-in-out;
+  }
+
+  > button:disabled {
+    cursor: not-allowed;
+    opacity: 0.9;
+
   }
 `

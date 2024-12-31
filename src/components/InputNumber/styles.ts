@@ -36,8 +36,13 @@ export const InputNumberContainer = styled.div`
     transition: 0.15s ease-in-out;
   }
 
-  > button:hover {
+  > button:not(:disabled):hover {
     color: ${props => props.theme['purple-dark']};
     transition: 0.15s ease-in-out;
+  }
+
+  > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 `

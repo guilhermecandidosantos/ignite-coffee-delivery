@@ -2,6 +2,11 @@ import styled from 'styled-components'
 import { typeFont } from '../../styles/text'
 import { defaultTheme } from '../../styles/theme/default'
 
+export const HomeContainer = styled.div`
+  position: relative;
+  padding: 3rem;
+`
+
 export const InfoWrapper = styled.div`
   position: relative;
 `

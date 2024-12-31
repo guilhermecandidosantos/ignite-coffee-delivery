@@ -2,6 +2,7 @@ import {
   BackgroundContainer,
   CardsContainer,
   CoffeeTitle,
+  HomeContainer,
   Image,
   ImageContainer,
   Infos,
@@ -15,10 +16,11 @@ import coffeeImage from '../../assets/coffee-image.svg'
 import backgroundImage from '../../assets/background.svg'
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { Card } from '../../components/Card'
+import data from '../../data.json'
 
 export function Home() {
   return (
-    <div>
+    <HomeContainer>
       <InfoWrapper>
         <Infos>
           <InfosContainer>
@@ -67,12 +69,12 @@ export function Home() {
       </CoffeeTitle>
 
       <CardsContainer>
-        {Array.from({ length: 6 }, (_, index) => {
+        {data.coffees.map(coffee => {
           return (
-            <Card key={index} />
+            <Card key={coffee.id} dataCoffee={coffee} />
           )
         })}
       </CardsContainer>
-    </div>
+    </HomeContainer>
   )
 }

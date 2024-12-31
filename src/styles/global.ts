@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
   }
 
@@ -16,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
     color: ${props => props.theme['base-text']};
+    position: relative;
   }
 `

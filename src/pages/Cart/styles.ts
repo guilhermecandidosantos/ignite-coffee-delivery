@@ -95,7 +95,12 @@ export const InputBase = styled.input`
   &:focus {
     box-shadow: 0 0 0 1px ${props => props.theme['yellow-dark']};
   }
+
+  &[name="state"] {
+    text-transform: uppercase;
+  }
 `
+
 export const NumberComplement = styled.div`
   display: flex;
   flex: 1;
@@ -219,68 +224,6 @@ export const PreviewContainer = styled.div`
 
 `
 
-export const CoffeeInfo = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 1.25rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid ${props => props.theme['base-button']};
-
-  > img {
-    max-width: 4rem;
-  }
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 0.5rem;
-
-    > p {
-      ${typeFont.textMR};
-      color: ${props => props.theme['base-subtitle']};
-    }
-
-    > div {
-      display: flex;
-      flex-direction: row;
-      gap: 0.5rem;
-
-      > button {
-        display: flex;
-        /* flex: 1; */
-        flex-direction: row;
-        align-items: center;
-        border: none;
-        padding: 0.5rem;
-        color: ${props => props.theme['purple']};
-        background: ${props => props.theme['base-button']};
-        ${typeFont.buttonM};
-        font-weight: 400;
-        text-transform: uppercase;
-        line-height: 1;
-        gap: 0.25rem;
-        cursor: pointer;
-        border-radius: 6px;
-        transition: 0.3s ease;
-
-        > span {
-          color: ${props => props.theme['base-text']};
-        }
-
-        &:hover {
-          transition: 0.3s ease;
-          background: ${props => props.theme['base-hover']};
-          > span {
-            color: ${props => props.theme['base-subtitle']};
-          }
-        }
-      }
-    }
-  }
-  
-`
-
 export const PriceContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -334,3 +277,28 @@ export const SubmitOrder = styled.button`
     transition: 0.3s ease;
   }
 `
+
+export const EmptyContainer = styled.div`
+  margin: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1752px) {
+      margin: 0 15rem;
+    }
+
+    @media (max-width: 1656px) {
+      margin: 0 10rem;
+    }
+
+    @media (max-width: 1588px) {
+      margin: 0 2rem;
+    }
+  > h1 {
+    ${typeFont.titleL};
+  }
+
+  
+`
+export const ZipContainer = styled.form``

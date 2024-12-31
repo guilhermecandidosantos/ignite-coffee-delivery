@@ -14,6 +14,7 @@ export const RadioContainer = styled.label`
   flex: 1;
   cursor: pointer;
   transition: 0.3s ease;
+  border: 1px solid transparent;
 
 
   &:hover {
@@ -33,7 +34,7 @@ export const RadioContainer = styled.label`
 
   &[data-state=true] {
     background: ${props => props.theme['purple-light']};
-    border: 1px solid ${props => props.theme['purple']};
+    border-color: ${props => props.theme['purple']};
   }
 
   > input {
