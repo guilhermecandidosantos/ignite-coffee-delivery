@@ -12,8 +12,6 @@ import {
   ItemsContainer,
   TitlesContainer,
 } from './styles'
-import coffeeImage from '../../assets/coffee-image.svg'
-import backgroundImage from '../../assets/background.svg'
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import { Card } from '../../components/Card'
 import data from '../../data.json'
@@ -54,13 +52,13 @@ export function Home() {
 
           <ImageContainer>
             <Image>
-              <img src={coffeeImage} alt="" />
+              <img src="/assets/coffee-image.svg" alt="" />
             </Image>
           </ImageContainer>
         </Infos>
 
         <BackgroundContainer>
-          <img src={backgroundImage} alt="" />
+          <img src="/assets/background.svg" alt="" />
         </BackgroundContainer>
       </InfoWrapper>
 

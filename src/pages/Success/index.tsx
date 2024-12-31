@@ -10,7 +10,6 @@ import {
 
 } from './styles'
 import { CurrencyDollar, MapPin, Timer } from '@phosphor-icons/react'
-import motoBoy from '../../assets/motoboy.svg'
 import { TypePayment } from '../Cart/components/Radio'
 
 export function Success() {
@@ -65,7 +64,7 @@ export function Success() {
             </InfoContainer>
 
           </DeliveryContainer>
-          <img src={motoBoy} alt="" />
+          <img src="/assets/motoboy.svg" alt="" />
         </InfoDeliveryContainer>
       </SuccessContainer>
     )

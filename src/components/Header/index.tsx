@@ -1,5 +1,4 @@
 import { MapPin, ShoppingCart, X } from '@phosphor-icons/react'
-import logo from '../../assets/logo.svg'
 import { CardButton, HeaderContainer, Loader, ModalContainer, ModalContent, Zip } from './styles'
 import { defaultTheme } from '../../styles/theme/default'
 import { NavLink } from 'react-router'
@@ -76,7 +75,7 @@ export function Header() {
     <HeaderContainer>
 
       <NavLink to="/">
-        <img src={logo} alt="" />
+        <img src="/assets/logo.svg" alt="" />
       </NavLink>
 
       <div>

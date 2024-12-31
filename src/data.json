@@ -2,7 +2,7 @@
   "coffees": [
     {
       "id": 1,
-      "image": "/src/assets/coffees/expresso.svg",
+      "image": "/assets/coffees/expresso.svg",
       "tags": ["tradicional"],
       "title": "Expresso Tradicional",
       "description": "O tradicional café feito com água quente e grãos moídos",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "image": "/src/assets/coffees/americano.svg",
+      "image": "/assets/coffees/americano.svg",
       "tags": ["tradicional"],
       "title": "Expresso Americano",
       "description": "Expresso diluído, menos intenso que o tradicional",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "image": "/src/assets/coffees/expresso-cremoso.svg",
+      "image": "/assets/coffees/expresso-cremoso.svg",
       "tags": ["tradicional"],
       "title": "Expresso Cremoso",
       "description": "Café expresso tradicional com espuma cremosacc",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "image": "/src/assets/coffees/cafe-gelado.svg",
+      "image": "/assets/coffees/cafe-gelado.svg",
       "tags": ["tradicional","gelado"],
       "title": "Expresso Gelado",
       "description": "Bebida preparada com café expresso e cubos de gelo",
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "image": "/src/assets/coffees/cafe-com-leite.svg",
+      "image": "/assets/coffees/cafe-com-leite.svg",
       "tags": ["tradicional", "com leite"],
       "title": "Café com Leite",
       "description": "Meio a meio de expresso tradicional com leite vaporizado",
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "image": "/src/assets/coffees/americano.svg",
+      "image": "/assets/coffees/americano.svg",
       "tags": ["tradicional", "com leite"],
       "title": "Latte",
       "description": "Uma dose de café expresso com o dobro de leite e espuma cremosa",
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "image": "/src/assets/coffees/capuccino.svg",
+      "image": "/assets/coffees/capuccino.svg",
       "tags": ["tradicional", "com leite"],
       "title": "Capuccino",
       "description": "Bebida com canela feita de doses iguais de café, leite e espuma",
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "image": "/src/assets/coffees/macchiato.svg",
+      "image": "/assets/coffees/macchiato.svg",
       "tags": ["tradicional", "com leite"],
       "title": "Macchiato",
       "description": "Café expresso misturado com um pouco de leite quente e espuma",
@@ -66,7 +66,7 @@
     },
     {
       "id": 9,
-      "image": "/src/assets/coffees/mocaccino.svg",
+      "image": "/assets/coffees/mocaccino.svg",
       "tags": ["tradicional", "com leite"],
       "title": "Mocaccino",
       "description": "Café expresso com calda de chocolate, pouco leite e espuma",
@@ -74,7 +74,7 @@
     },
     {
       "id": 10,
-      "image": "/src/assets/coffees/chocolate-quente.svg",
+      "image": "/assets/coffees/chocolate-quente.svg",
       "tags": ["especial", "com leite"],
       "title": "Chocolate Quente",
       "description": "Bebida feita com chocolate dissolvido no leite quente e café",
@@ -82,7 +82,7 @@
     },
     {
       "id": 11,
-      "image": "/src/assets/coffees/cubano.svg",
+      "image": "/assets/coffees/cubano.svg",
       "tags": ["especial", "alcoólico", "gelado"],
       "title": "Cubano",
       "description": "Drink gelado de café expresso com rum, creme de leite e hortelã",
@@ -90,7 +90,7 @@
     },
     {
       "id": 12,
-      "image": "/src/assets/coffees/havaiano.svg",
+      "image": "/assets/coffees/havaiano.svg",
       "tags": ["especial"],
       "title": "Havaiano",
       "description": "Bebida adocicada preparada com café e leite de coco",
@@ -98,7 +98,7 @@
     },
     {
       "id": 13,
-      "image": "/src/assets/coffees/arabe.svg",
+      "image": "/assets/coffees/arabe.svg",
       "tags": ["especial"],
       "title": "Árabe",
       "description": "Bebida preparada com grãos de café árabe e especiarias",
@@ -106,7 +106,7 @@
     },  
     {
       "id": 14,
-      "image": "/src/assets/coffees/irlandes.svg",
+      "image": "/assets/coffees/irlandes.svg",
       "tags": ["especial","alcoólico"],
       "title": "Irlandês",
       "description": "Bebida a base de café, uísque irlandês, açúcar e chantilly",
