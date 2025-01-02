@@ -7,6 +7,7 @@ export const CoffeeInfo = styled.div`
   gap: 1.25rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid ${props => props.theme['base-button']};
+  flex-wrap: wrap;
 
   > img {
     max-width: 4rem;

@@ -4,20 +4,19 @@ import { typeFont } from '../../styles/text'
 export const CartContainer = styled.form`
   display: flex;
   flex-direction: row;
-  margin: 0 20rem;
+  margin: 0 20rem 3rem 20rem;
   gap: 2rem;
-  
 
   @media (max-width: 1752px) {
-    margin: 0 15rem;
+    margin: 0 15rem 3rem 15rem;
   }
 
   @media (max-width: 1656px) {
-    margin: 0 10rem;
+    margin: 0 10rem 3rem 10rem;
   }
 
   @media (max-width: 1588px) {
-    margin: 0 2rem;
+    margin: 0 2rem 3rem 2rem;
   }
 
   @media (max-width: 1070px) {
@@ -36,6 +35,7 @@ export const AddressPayment = styled.div`
 
   @media (max-width: 612px) {
     flex: 1;
+    width: 100%;
   }
 `
 
@@ -43,6 +43,9 @@ export const AddressContainer = styled.div`
   background: ${props => props.theme['base-card']};
   padding: 2.5rem;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 `
 
 export const TitleAddressContainer = styled.div`
@@ -168,6 +171,12 @@ export const PaymentContainer = styled.div`
   margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: 612px) {
+    flex: 1;
+    width: 100%;
+  }
 `
 
 export const TitlePayment = styled.div`
@@ -192,10 +201,16 @@ export const RadioContainer = styled.div`
   flex-direction: row;
   gap: 0.75rem;
   margin-top: 2rem;
+  
+
+  @media (max-width: 507px) {
+    flex-direction: column;
+  }
 `
 
 export const CoffeePreview = styled.div`
   flex: 1;
+  width: 100%;
 
   @media (max-width: 1044px) {
     max-width: 40rem;
@@ -205,11 +220,6 @@ export const CoffeePreview = styled.div`
     ${typeFont.titleXS};
     color: ${props => props.theme['base-subtitle']};
     margin-bottom: 1rem;
-  }
-
-  @media (max-width: 612px) {
-    flex: 1;
-    width: 100%;
   }
 `
 

@@ -87,7 +87,7 @@ export const CardButton = styled.button`
 export const ModalContainer = styled.div`
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
